@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+Created by: Tarek Jamous
+e-mail: taja1900@student.miun.se
+Created on a date: 5/09/2020.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="This airline website." name="description">
+    <meta content="Tarek Jamous" name="student">
+    <title>Touch Typing</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="js/main.js"></script>
+</head>
+<body id="bodypage">
+<!--HEADER -->
+<header class="header-container">
+    <img alt="logo" class="logo" id="left-header" src="img/logo.png">
+    <aside id="right-header"><h1 id="logoTxt">Touch Typing</h1></aside>
+</header>
+
+<!-- MAIN BODY -->
+<main class="body-container" id="main">
+    <fieldset>
+        <section id="choosing">
+            <nav class="user-options left_op">
+                <input id="caseChar" type="checkbox">Ignore Casing<br>
+                <input class="language" checked="checked" id="swed" name="language" type="radio" value="swe">
+                <label for="swed">Swedish</label><br>
+                <input class="language" id="eng" name="language" type="radio" value="eng">
+                <label for="eng">English</label><br>
+            </nav>
+
+            <nav class="user-options right_op">
+                <label for="txt">Choose a text:</label>
+                <select class="select_Name_text" id="txt" name="select_Name_text">
+                    <option value="">Select One …</option>
+                </select>
+            </nav>
+        </section>
+        <fieldset id="test_fieldset">
+            <p id="title_text"></p>
+            <p id="artist_text"></p>
+            <p id="txtarea">
+                The text will be here after you select it...
+            </p>
+            <audio id="audio"></audio>
+        </fieldset>
+        <div id="u_input">
+            <nav>
+                <input id="user_input" placeholder="Type here... " type="text">
+            </nav>
+            <nav>
+                <input alt="start" class="btn danger" id="startB" src="img/start.png" type="image"/>
+                <input alt="stop" class="btn danger" id="stopB" src="img/stop.png" type="image"/>
+            </nav>
+        </div>
+
+    </fieldset>
+
+    <fieldset class="footer-row">
+        <nav class="result-column">
+            <canvas class="canvasC" id="canvaId">
+            </canvas>
+        </nav>
+
+        <nav class="result-column">
+
+            <nav class="result-column">
+                <nav class="result-row">
+                    <label>Gross WPM: </label>
+                    <p class="result" id="gross">--</p>
+                </nav>
+                <nav class="result-row">
+                    <label>Net WPM: </label>
+                    <p class="result" id="net">--</p>
+                </nav>
+            </nav>
+            <nav class="result-column">
+                <nav class="result-row">
+                    <label>Accuracy: </label>
+                    <p class="result" id="accuracy">--</p>
+                </nav>
+                <nav class="result-row">
+                    <label>Errors: </label>
+                    <p class="result" id="errors">--</p>
+                </nav>
+            </nav>
+        </nav>
+
+
+    </fieldset>
+
+
+</main>
+
+
+<!--FOOTER -->
+<footer class="footer-container">
+
+    <h6><strong>&copy; 2020 by taja1900 , IncAll Rights Reserved.</strong></h6>
+    <address>
+        <a href="mailto:taja1900@student.miun.se">Contact me</a>
+    </address>
+
+</footer>
+
+</body>
+</html>
+
